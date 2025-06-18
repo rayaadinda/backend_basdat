@@ -253,36 +253,6 @@ Mendapatkan rata-rata lama peminjaman
 GET http://localhost:3000/laporan/rata-lama-peminjaman
 ```
 
-## Cara Menjalankan
 
-1. **Install dependencies:**
 
-```bash
-bun install
-```
 
-2. **Setup database:**
-
-- Import file `db.sql` ke MariaDB/MySQL
-- Jalankan script `update_database_uuid.sql` untuk mengupdate struktur database
-- Update konfigurasi database di `db.ts`
-
-3. **Jalankan server:**
-
-```bash
-bun run app.ts
-```
-
-4. **Test dengan Postman:**
-
-- Import collection atau gunakan endpoint di atas
-- Base URL: `http://localhost:3000`
-
-## Catatan
-
-- Pastikan MariaDB/MySQL sudah berjalan
-- Update password database di file `db.ts`
-- Format tanggal: YYYY-MM-DD
-- Semua response dalam format JSON
-- **ID buku sekarang menggunakan UUID** (contoh: `550e8400-e29b-41d4-a716-446655440000`)
-- **ID buku di-generate otomatis** saat menambah buku baru
